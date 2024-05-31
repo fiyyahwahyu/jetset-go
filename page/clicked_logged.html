@@ -15,14 +15,14 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-2">
-                <img class="navbar-brand" src="..\assets\logo2.png">
+                <img class="navbar-brand" src="../jetset-go/assets/logo2.png">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <!--nanti tambahin (href="index.html) di sebelah class, arahin ke html yg mau dilink-in-->
                         <li class="nav-item">
                             <div class="dropdown">
-                                <a class="btn btn-outline-secondary dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="btn btn-outline-warning dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   EN|ID
                                 </a>
                               
@@ -32,9 +32,18 @@
                                 </ul>
                               </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#">Bookings</a></li>
-                        <li class="nav-item pt-1"><button class="btn btn-outline-light btn-abc btn-sm me-2" type="button">Login</button></li>
-                        <li class="nav-item pt-1"><button class="btn btn-outline-secondary btn-abc btn-sm me-2" type="button">Register</button></li>
+                        <li class="btn btn-outline-warning border-0" href="#" role="button" aria-expanded="false">Bookings</li>
+                        <li class="nav-item dropdown">
+                            <a class="btn btn-outline-warning dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Meilisa</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="..\page\user.html">My Account</a></li>
+                                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                    <li><a class="dropdown-item" href="..\page\My Booking empty.html">My Bookings</a></li>
+                                    <li><a class="dropdown-item" href="..\page\PurchaseList.html">Purchases</a></li>
+                                    <a class="border-item pt-1"><button class="list-group-item list-group-item-action list-group-item-light p-3" data-bs-toggle="modal" data-bs-target="#myModa2" type="button">Log out</button></a>
+                                </ul>
+                         </li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <section class="mb-5">
-                        <div class="card">
+                        <div class="card bg-light">
                             <div class="card-body">
                                 <h2>Passenger Summary</h2>
                                 <div class="flight-info">
@@ -98,7 +107,7 @@
                         </div>
                     </section>
                     <section class="mb-5">
-                        <div class="card">
+                        <div class="card bg-light">
                             <div class="card-body">
                                 <div class="container">
                                     <h4>Contact Details</h4>
@@ -122,7 +131,7 @@
                         </div>
                     </section>
                     <section class="mb-5">
-                        <div class="card">
+                        <div class="card bg-light">
                             <div class="card-body"></div>
                         </div>
                     </section>
@@ -131,7 +140,7 @@
                 <div class="col-lg-4">
                     <!-- filter widget-->
                     <div class="card mb-4">
-                        <div class="card">
+                        <div class="card bg-light">
                             <div class="card-body">
                                     <div class="flight-info">
                                       <h2>Booking Summary</h2>
@@ -169,7 +178,9 @@
                             </div>
                         </div>
                     </div>
-                        <button type="submit" class="btn btn-primary btn-ab" onclick="alert('Login sebelum melanjutkan payment!')">Continue</button>
+                    <form action="..\page\Payment.html">
+                        <button type="submit" class="btn btn-primary btn-ab">Continue</button>
+                    </form>
                 </div>
             </div>
         </div>
