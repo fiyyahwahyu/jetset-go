@@ -93,16 +93,13 @@
 
 body {
   margin: 0;
+  background-image: url('../assets/background.png');
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-image: url('/assets/background.png');
-  background-color:rgba(0, 0, 0, 0.651) ;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -289,37 +286,8 @@ a > code {
   color: inherit;
 }
 
-kbd {
-  padding: 0.1875rem 0.375rem;
-  font-size: 0.875em;
-  color: var(--bs-body-bg);
-  background-color: var(--bs-body-color);
-  border-radius: 0.25rem;
-}
-kbd kbd {
-  padding: 0;
-  font-size: 1em;
-}
-
 figure {
   margin: 0 0 1rem;
-}
-
-img,
-svg {
-  vertical-align: middle;
-}
-
-table {
-  caption-side: bottom;
-  border-collapse: collapse;
-}
-
-caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #6c757d;
-  text-align: left;
 }
 
 th {
@@ -379,19 +347,6 @@ select:disabled {
 
 [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
   display: none !important;
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-button:not(:disabled),
-[type=button]:not(:disabled),
-[type=reset]:not(:disabled),
-[type=submit]:not(:disabled) {
-  cursor: pointer;
 }
 
 ::-moz-focus-inner {
